@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="750.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hehe.HelloController">
+   <children>
+      <Pane layoutX="7.0" layoutY="29.0" prefHeight="482.0" prefWidth="736.0" styleClass="mainPane">
+         <children>
+            <Pane layoutX="9.0" layoutY="18.0" prefHeight="79.0" prefWidth="627.0" styleClass="highlight">
+               <children>
+                  <TextField fx:id="userEntered" layoutX="7.0" layoutY="6.0" prefHeight="64.0" prefWidth="612.0" promptText="ENTER NUMBERS TO SORT">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutX="664.0" layoutY="18.0" prefHeight="457.0" prefWidth="58.0" styleClass="highlight">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/numpad.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/download.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView accessibleText="test" fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/5ced01c07a43eb64ef13d3191ecd285b-settings-button.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/download__1_-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/download__1_-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/download__1_-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/download__1_-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnSelection" layoutX="14.0" layoutY="111.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="19.0" layoutY="39.0" text="Selection Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnMerge" layoutX="14.0" layoutY="232.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="39.0" text="Merge Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnBucket" layoutX="14.0" layoutY="353.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="39.0" text="Bucket Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnCount" layoutX="177.0" layoutY="231.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="31.0" layoutY="39.0" text="Count Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnCube" layoutX="340.0" layoutY="353.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="39.0" text="Cube Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnRadix" layoutX="500.0" layoutY="353.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="34.0" layoutY="39.0" text="Radix Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnTree" layoutX="177.0" layoutY="352.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="39.0" text="Tree Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnTim" layoutX="340.0" layoutY="232.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="39.0" text="Tim Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnShell" layoutX="500.0" layoutY="232.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="37.0" layoutY="39.0" text="Shell Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnBubble" layoutX="177.0" layoutY="111.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="39.0" text="Bubble Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnInsertion" layoutX="340.0" layoutY="111.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="19.0" layoutY="39.0" text="Insertion Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="btnQuick" layoutX="500.0" layoutY="111.0" onMouseClicked="#onSortClicked" prefHeight="106.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="39.0" prefHeight="28.0" prefWidth="94.0" text="Quick Sort" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="sortButton" />
+               </styleClass>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane id="titlePane" fx:id="titlePane" prefHeight="24.0" prefWidth="736.0">
+         <children>
+            <Pane fx:id="btnClose" layoutX="16.0" layoutY="6.0" prefHeight="16.0" prefWidth="16.0" styleClass="btnWindowClose" />
+            <Pane fx:id="btnMinimize" layoutX="42.0" layoutY="6.0" prefHeight="16.0" prefWidth="16.0" styleClass="btnWindowYellow" />
+            <Pane fx:id="btnMaximize" layoutX="66.0" layoutY="6.0" prefHeight="16.0" prefWidth="16.0" styleClass="btnWindowGreen" />
+            <Label layoutX="284.0" layoutY="6.0" prefHeight="16.0" prefWidth="168.0" text="SORTING MADE SIMPLE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

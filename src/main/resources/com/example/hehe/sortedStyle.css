@@ -1,0 +1,36 @@
+.root{
+    -fx-background-color: #222;
+    -fx-background-radius: 26;
+
+}
+
+.btnWindowClose{
+ -fx-background-color: #ff605c;
+        -fx-background-radius: 50;
+ }
+
+ .btnWindowYellow{
+ -fx-background-color: #ffbd44;
+        -fx-background-radius: 50;
+ }
+  .btnWindowGreen{
+ -fx-background-color: #00ca4e;
+        -fx-background-radius: 50;
+ }
+
+
+  .btnWindowClose:hover{
+  -fx-background-color: #ff605c60;
+  }
+
+  .btnWindowYellow:hover{
+  -fx-background-color: #ffbd4460;
+  }
+
+   .btnWindowGreen:hover{
+  -fx-background-color: #00ca4e60;
+  }
+
+.textArea{
+    -fx-background-color: #ff605c;
+}
